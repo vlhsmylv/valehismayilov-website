@@ -19,13 +19,14 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        Hello I am Valeh! Freshman IT student at ADA University. Self-taught programmer.
-        </p> 
+        Hello I am Valeh! Freshman IT student at ADA University. Self-taught
+        programmer.
+      </p>
       <p className="mb-3">
         Have 2+ years of experience in the Web Development field. Currently,
         working as a Full-stack Web Developer in a digital agency named
-        "Lightbox Agency" and a member of SABAH.incubation Program (2023). CTO
-        at the group which was established under the framework of
+        &quot;Lightbox Agency&quot; and a member of SABAH.incubation Program
+        (2023). CTO at the group which was established under the framework of
         SABAH.incubation.
       </p>
     </motion.section>

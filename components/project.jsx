@@ -5,15 +5,13 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsData)[number];
-
 export default function Project({
   title,
   description,
   tags,
   imageUrl,
   link
-}: ProjectProps) {
+}) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,

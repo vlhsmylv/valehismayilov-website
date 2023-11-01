@@ -7,7 +7,7 @@ import ContactFormEmail from "@/email/contact-form-email";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export const sendEmail = async (formData: FormData) => {
+export const sendEmail = async () => {
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
 
@@ -35,7 +35,7 @@ export const sendEmail = async (formData: FormData) => {
         senderEmail: senderEmail,
       }),
     });
-  } catch (error: unknown) {
+  } catch (error) {
     return {
       error: getErrorMessage(error),
     };
